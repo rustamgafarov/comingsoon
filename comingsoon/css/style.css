@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    overflow:hidden
+}
+
+.container {
+    position:relative;
+    background-image: linear-gradient(rgba(71, 38, 11, 0.5),rgba(235, 158, 85, 0.5)),
+    url('../img/pexels-giftpunditscom-1303085.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.container-inner {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding-top: 10rem;
+}
+
+.container-inner h1 {
+    font-family: 'Mountains of Christmas', cursive;
+    font-size: 3rem;
+    color: rgba(187, 123, 50, 0.726);
+    text-transform: uppercase;
+}
+
+.countdown {
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.countdown div {
+    font-size: 1.8rem;
+    padding: 0.6rem;
+    border: 1px solid  rgba(187, 123, 50, 0.726);
+    border-radius: 5px;
+    margin: 0.3rem;
+    opacity: 0.7;
+    background-color: rgb(80, 44, 14);
+    color: rgba(187, 123, 50, 0.726);
+}
+
+@media (max-width: 568px) {
+    .container-inner h1 {
+        font-size: 1.5rem;
+    }
+
+    .countdown {
+        font-size: 2rem;
+        flex-direction: column;
+    }
+}
